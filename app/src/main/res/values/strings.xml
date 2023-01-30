@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">KC</string>
+    <string name="loading_please_wait">Loading, please wait.</string>
+    <string name="home">Home</string>
+    <string name="label_welcomescreen">Welcome</string>
+    <string name="label_kchome">Home</string>
+    <string name="nothing_to_display">Nothing to Display!</string>
+    <string name="welcome_screen_text">Welcome to KC App</string>
 </resources>
