@@ -8,20 +8,23 @@ import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
 import androidx.compose.ui.Modifier
 import com.example.kc.ui.theme.KCTheme
+import com.example.kc.viewmodels.UsersViewModel
+import com.example.kc.ui.screens.UsersScreen
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        val viewModel = UsersViewModel()
         setContent {
             KCTheme {
-                // A surface container using the 'background' color from the theme
                 Surface(
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colors.background
                 ) {
-                    //TODO: Implement Screens and Navigation
+                    UsersScreen(viewModel)
                 }
             }
         }
     }
 }
+
