@@ -14,8 +14,8 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
 @Composable
-fun UsersScreen(viewModel: UsersViewModel) {
-
+fun UsersScreen() {
+    val viewModel = UsersViewModel()
     val users = viewModel.users.observeAsState()
 
     Column(
